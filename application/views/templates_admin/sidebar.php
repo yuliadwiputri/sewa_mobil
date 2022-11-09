@@ -239,6 +239,7 @@
             <li><a class="nav-link" href="<?php echo base_url('admin/dashboard') ?>"><i class="fas fa-tachometer-alt"></i> <span>Dashboard</span></a></li>
             <li><a class="nav-link" href="<?php echo base_url('admin/data_type') ?>"><i class="fas fa-circle"></i> <span>Data Type</span></a></li>
             <li><a class="nav-link" href="<?php echo base_url('admin/data_mobil') ?>"><i class="fas fa-car"></i> <span>Data Mobil</span></a></li>
+            <li><a class="nav-link" href="<?php echo base_url('admin/data_pelanggan') ?>"><i class="fas fa-user"></i> <span>Data Pelanggan</span></a></li>
                 </ul>
         </aside>
       </div>
