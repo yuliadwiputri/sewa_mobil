@@ -15,6 +15,7 @@ class Register extends CI_Controller{
             $no_telepon = $this->input->post('no_telepon');
             $no_ktp = $this->input->post('no_ktp');
             $password = md5($this->input->post('password'));
+            $role_id='2';
            
             $data = array(
                 'nama' => $nama,
@@ -24,11 +25,12 @@ class Register extends CI_Controller{
                 'no_telepon' => $no_telepon,
                 'no_ktp' => $no_ktp,
                 'password' => $password,
+                'role_id' => $role_id,
 
             );
             $this->sewa_model->insert_data($data, 'customer');
             $this->session->set_flashdata('pesan','<div class="alert alert-success alert-dismissible fade show" role="alert">
-           Berhasil 
+           Berhasil Register
            <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           </div>');
              redirect('auth/login');
