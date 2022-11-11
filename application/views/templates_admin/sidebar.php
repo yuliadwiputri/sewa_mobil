@@ -78,12 +78,12 @@
           </div>
         </form>
         <ul class="navbar-nav navbar-right">
-          
+
           <li class=""><a href="#" class="nav-link  nav-link-lg nav-link-user">
               <img alt="image" src="<?php echo base_url('assets/assets_stisla') ?>/assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
-              <div class="d-sm-none d-lg-inline-block">Halo, <?php echo $this->session->userdata('nama')?></div>
+              <div class="d-sm-none d-lg-inline-block">Halo, <?php echo $this->session->userdata('nama') ?></div>
             </a>
-           
+
           </li>
         </ul>
       </nav>
@@ -96,13 +96,14 @@
             <a href="index.html">CR</a>
           </div>
           <ul class="sidebar-menu">
-                                                                
+
             <li><a class="nav-link" href="<?php echo base_url('admin/dashboard') ?>"><i class="fas fa-tachometer-alt"></i> <span>Dashboard</span></a></li>
             <li><a class="nav-link" href="<?php echo base_url('admin/data_type') ?>"><i class="fas fa-circle"></i> <span>Data Type</span></a></li>
             <li><a class="nav-link" href="<?php echo base_url('admin/data_mobil') ?>"><i class="fas fa-car"></i> <span>Data Mobil</span></a></li>
             <li><a class="nav-link" href="<?php echo base_url('admin/data_pelanggan') ?>"><i class="fas fa-user"></i> <span>Data Pelanggan</span></a></li>
             <li><a class="nav-link" href="<?php echo base_url('auth/logout') ?>"><i class="fas fa-sign-out-alt"></i> <span>Logout</span></a></li>
-           
-                </ul>
+
+            <li><a class="nav-link" href="<?php echo base_url('auth/ganti_password') ?>"><i class="fas fa-lock"></i> <span>Ganti Password</span></a></li>
+          </ul>
         </aside>
       </div>

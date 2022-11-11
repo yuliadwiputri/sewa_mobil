@@ -8,15 +8,18 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
                     <!-- <li class="nav-item"><a class="nav-link" href="#!">About</a></li> -->
-                    <li class="nav-item"><a class="nav-link" href="<?php echo base_url('register')?>">Register</a></li>
-                    <li class="nav-item">
-                        <?php if($this->session->userdata('nama')) { ?>
-                            <a class="nav-link" href="<?php echo base_url('auth/logout')?>"><span class="">Logout</span></a>
+                    <li class="nav-item"><a class="nav-link" href="<?php echo base_url('register') ?>">Register</a></li>
+
+                    <li class="nav-item row ml-2">
+                        <?php if ($this->session->userdata('nama')) { ?>
+                            <a class="nav-link" href="<?php echo base_url('auth/logout') ?>"><span class="btn btn-sm btn-warning">Logout</span></a>
+
+                            <a class="nav-link" href="<?php echo base_url('auth/ganti_password') ?>"><span class="btn btn-sm btn-primary">Ganti Password</span></a>
                         <?php } else { ?>
-                            <a class="nav-link" href="<?php echo base_url('auth/login')?>"><span class="">Login</span></a>
-                    
-                            <?php } ?>
-                        </li>
+                            <a class="nav-link" href="<?php echo base_url('auth/login') ?>"><span class="">Login</span></a>
+
+                        <?php } ?>
+                    </li>
 
                     <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
@@ -58,7 +61,7 @@
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <img class="card-img-top" src="<?php echo base_url('assets/upload/'.$mb->gambar)?>" style="width:220px; height:150px" alt="..." />
+                            <img class="card-img-top" src="<?php echo base_url('assets/upload/' . $mb->gambar) ?>" style="width:220px; height:150px" alt="..." />
                             <!-- Product details-->
                             <div class="card-body">
                                 <h4 class="card-title"><a href="#"><?php echo $mb->merk ?></a>
@@ -67,15 +70,14 @@
 
                             </div>
                             <div class="card-footer">
-                                <?php 
-                                if($mb->status=="0"){
+                                <?php
+                                if ($mb->status == "0") {
                                     echo "<span class='btn btn-danger' disable>Telah disewa</span>";
-                                } else{
-                                    echo anchor('customer/sewa/tambah_rental'.$mb->id_mobil, '<button class="btn btn-success">Sewa</button>');
-                                    
-                                }?>
+                                } else {
+                                    echo anchor('customer/sewa/tambah_rental' . $mb->id_mobil, '<button class="btn btn-success">Sewa</button>');
+                                } ?>
 
-                                <a class="btn btn-warning" href="<?php  echo base_url('customer/dashboard/detail_mobil/').$mb->id_mobil?>">Detail</a>
+                                <a class="btn btn-warning" href="<?php echo base_url('customer/dashboard/detail_mobil/') . $mb->id_mobil ?>">Detail</a>
                             </div>
 
                         </div>

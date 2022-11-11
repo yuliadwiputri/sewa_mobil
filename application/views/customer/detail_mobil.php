@@ -1,5 +1,5 @@
 <div class="container">
-<?php foreach ($detail as $dt) : ?>
+    <?php foreach ($detail as $dt) : ?>
         <div class="card">
             <div class="card-body">
                 <div class="row content-center">
@@ -24,7 +24,7 @@
                                     }
                                     ?>
                                 </td>
-                              
+
                             </tr>
                             <tr>
                                 <th>Merk</th>
@@ -52,19 +52,18 @@
                                         echo "tersedia";
                                     } ?>
                                 </td>
-                               <tr>
+                            <tr>
                                 <td>
-                            <?php 
-                                if($dt->status=="0"){
-                                    echo "<span class='btn btn-danger' disable>Telah disewa</span>";
-                                } else{
-                                    echo anchor('customer/sewa/tambah_rental'.$dt->id_mobil, '<button class="btn btn-success">Sewa</button>');
-                                    
-                                }?>  
-                            </td>
+                                    <?php
+                                    if ($dt->status == "0") {
+                                        echo "<span class='btn btn-danger' disable>Telah disewa</span>";
+                                    } else {
+                                        echo anchor('customer/sewa/tambah_rental' . $dt->id_mobil, '<button class="btn btn-success">Sewa</button>');
+                                    } ?>
+                                </td>
                             <tr>
                             </tr>
-                          
+
                         </table>
                         <a class="btn btn-sm btn-danger ms-1" href="<?php echo base_url('customer/dashboard') ?>">Kembali</a>
                     </div>
@@ -74,5 +73,5 @@
         </div>
 
     <?php endforeach; ?>
-    
+
 </div>
