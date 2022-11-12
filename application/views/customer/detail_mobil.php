@@ -1,6 +1,6 @@
 <div class="container">
     <?php foreach ($detail as $dt) : ?>
-        <div class="card">
+        <div class="card" style="margin-top: 150px">
             <div class="card-body">
                 <div class="row content-center">
 
