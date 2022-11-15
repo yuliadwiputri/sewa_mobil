@@ -1,9 +1,9 @@
 
     <!--== SlideshowBg Area Start ==-->
-    <div class="container">
+    <div class="container mx-auto">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                <br><br><br>
+                <div class="text-center">
+                
                 </div>
             </div>
         </div>
@@ -14,12 +14,13 @@
     <div></div>
     <section id="mobile-app-area">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6 text-center">
-                    <div class="mobile-app-content">
+            
+                <div class="text-center">
+                    <div class="mobile-app-content text-center">
                                 <?php if($this->session->userdata('nama')) { ?>
-                                    <h2>BOOK A CAR TODAY!</h2>
-                                    <p>PLEASE CHOOSE A CAR TO RENT</p>
+                                    <h2>SEWA MOBIL HARI INI</h2>
+                                    <h4>Silakan Pilih Mobil Untuk Disewa</h4>
+                                    <br>
                                     <div class="app-btns">
                                         <a href="<?php echo base_url('customer/Data_mobil')?>"><i class=""></i> MOBIL</a>
                                         
@@ -35,7 +36,7 @@
                         
                     </div>
                 </div>
-            </div>
+            
         </div>
     </section>
     <br>

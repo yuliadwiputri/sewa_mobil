@@ -78,7 +78,10 @@
                                             <i class="fa fa-star unmark"></i>
                                         </p>
 
-                                        <a href="" class="rent-btn">Sewa</a>
+                                        <?php if ($mbl->status=="1") {
+                                            echo anchor('customer/sewa/tambah_sewa/'.$mbl->id_mobil,'<span class="rent-btn">Sewa</span>');}
+                                            else{
+                                                echo "<span class='rent-btn'>Tidak Tersedia</span>";}?>
                                         <a href="<?php echo base_url('Customer/Data_mobil/detail_mobil/' . $mbl->id_mobil) ?>" class="rent-btn">Detail</a>
                                     </div>
                                 </div>

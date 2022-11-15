@@ -3,7 +3,7 @@
           Copyright &copy; 2022 <div class="bullet"></div> Design By <a href="https://nauval.in/">Team</a>
         </div>
         <div class="footer-right">
-          2.3.0
+          1.0.0
         </div>
       </footer>
     </div>

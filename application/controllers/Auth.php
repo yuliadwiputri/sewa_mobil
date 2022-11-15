@@ -28,7 +28,7 @@ class  Auth extends CI_Controller
 
                 switch ($cek->role_id) {
                     case 1:
-                        redirect('admin/dashboard');
+                        redirect('admin/data_type');
                         break;
                     case 2:
                         redirect('customer/dashboard');
