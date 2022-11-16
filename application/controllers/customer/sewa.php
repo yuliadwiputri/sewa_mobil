@@ -39,7 +39,7 @@ class sewa extends CI_Controller{
 
         $this->sewa_model->update_data('mobil', $status, $id);
         $this->session->set_flashdata('pesan' ,'<div class="alert alert-success alert-dismissible fade show" role="alert">
-            Transaksi Berhasil, Silahkan Checkout!.
+            Mobil berhasil disewa.
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
