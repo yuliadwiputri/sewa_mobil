@@ -9,7 +9,7 @@ class sewa extends CI_Controller{
 
     public function tambah_sewa_aksi(){
       
-        $id_customer = $this->session->userdata('id_customer');
+        $id_pengguna = $this->session->userdata('id_pengguna');
         $id_mobil    = $this->input->post('id_mobil');
         $tanggal_sewa  = $this->input->post('tanggal_sewa');
         $tanggal_kembali = $this->input->post('tanggal_kembali');
@@ -17,7 +17,7 @@ class sewa extends CI_Controller{
         $harga       = $this->input->post('harga');
 
         $data = array(
-            'id_customer'    => $id_customer,
+            'id_pengguna'    => $id_pengguna,
             'id_mobil'    => $id_mobil,
             'tanggal_sewa'  => $tanggal_sewa,
             'tanggal_kembali' => $tanggal_kembali,
@@ -28,7 +28,7 @@ class sewa extends CI_Controller{
             'status_pengembalian' => 'Belum Kembali',
         );
 
-        $this->sewa_model->insert_data($data,'transaksi');
+        $this->sewa_model->insert_data($data,'sewa');
 
         $status = array(
           'status' => '0'

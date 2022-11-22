@@ -81,20 +81,7 @@
                                     <?php echo form_error('mp3_player', '<div class="text small text-danger">', '</div') ?>
                                 </div>
 
-                                <div class="form-group">
-                                    <label>Central Lock</label>
-                                    <select name="central_lock" class="form-control">
-                                        <option <?php if ($mb->central_lock == "1") {
-                                                    echo "selected='selected'";
-                                                }
-                                                echo $mb->central_lock; ?> value="1">Tersedia</option>
-                                        <option <?php if ($mb->central_lock == "0") {
-                                                    echo "selected='selected'";
-                                                }
-                                                echo $mb->central_lock; ?> value="0">Tidak Tersedia</option>
-                                    </select>
-                                    <?php echo form_error('central_lock', '<div class="text small text-danger">', '</div') ?>
-                                </div>
+                               
 
                             </div>
 

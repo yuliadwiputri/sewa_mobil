@@ -61,14 +61,7 @@
                                 </select>
                             </div>
 
-                            <div class="form-group">
-                                <label>Central Lock</label>
-                                <select name="central_lock" class="form-control">
-                                    <option value="1">Tersedia</option>
-                                    <option value="0">Tidak Tersedia</option>
-                                    <?php echo form_error('central_lock', '<div class="text small text-danger">', '</div') ?>
-                                </select>
-                            </div>
+                            
 
 
                         </div>

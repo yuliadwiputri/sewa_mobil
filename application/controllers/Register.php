@@ -28,7 +28,7 @@ class Register extends CI_Controller{
                 'role_id' => $role_id,
 
             );
-            $this->sewa_model->insert_data($data, 'customer');
+            $this->sewa_model->insert_data($data, 'pengguna');
             $this->session->set_flashdata('pesan','<div class="alert alert-success alert-dismissible fade show" role="alert">
            Berhasil Register
            <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>

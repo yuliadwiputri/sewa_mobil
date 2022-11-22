@@ -61,14 +61,7 @@
                                                 }
 
                                                 ?>MP3 Player</li>
-                                            <li><?php
-                                                if ($mbl->central_lock == "1") {
-                                                    echo "<i class='fa fa-check-circle text-warning' aria-hidden='true'></i>";
-                                                } else {
-                                                    echo "<i class='fa fa-times-circle text-danger' aria-hidden='true'></i>";
-                                                }
-
-                                                ?>Central Lock</li>
+                                           
                                         </ul>
                                         <p class="rating">
                                             <i class="fa fa-star"></i>

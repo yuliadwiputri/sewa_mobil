@@ -75,7 +75,7 @@
                                 </li>
                                 <?php if($this->session->userdata('nama')) { ?>
                                   <li><a href="<?php echo base_url('customer/data_mobil')?>">Mobil</a></li>
-                                  <li><a href="<?php echo base_url('Customer/Transaksi')?>">Transaksi</a></li>
+                                  <li><a href="<?php echo base_url('Customer/Data_Sewa')?>">Data Sewa</a></li>
                                   <!-- <li><a href="<?php echo base_url('Customer/About')?>">About</a></li> -->
                                   <!-- <li><a href="<?php echo base_url('auth/ganti_password') ?>">Ganti Password</a></li> -->
                                   <li><a href="<?php echo base_url('Auth/logout')?>">Welcome <?php echo $this->session->userdata('nama')?> <span> | Logout</span></a></li>

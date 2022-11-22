@@ -106,17 +106,7 @@
                                 </td>
                             </tr>
 
-                            <tr>
-                                <td>Central Lock</td>
-                                <td>
-                                    <?php
-                                    if ($dt->central_lock == "0") {
-                                        echo "<span class='badge badge-danger'>Tidak Tersedia</span>";
-                                    } else {
-                                        echo "<span class='badge badge-primary'>Tersedia</span>";
-                                    } ?>
-                                </td>
-                            </tr>
+                           
 
                         </table>
                         <a class="btn btn-sm btn-danger " href="<?php echo base_url('admin/data_mobil') ?>">Kembali</a>

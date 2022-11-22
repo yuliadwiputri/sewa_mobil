@@ -37,7 +37,7 @@ class sewa_model extends CI_model
         $result = $this->db->where('username', $username)
             ->where('password', md5($password))
             ->limit(1)
-            ->get('customer');
+            ->get('pengguna');
 
         if ($result->num_rows() > 0) {
             return $result->row();

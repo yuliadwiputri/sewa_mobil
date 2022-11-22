@@ -35,7 +35,7 @@ class Data_mobil extends CI_Controller
             $ac = $this->input->post('ac');
             $supir = $this->input->post('supir');
             $mp3_player = $this->input->post('mp3_player');
-            $central_lock = $this->input->post('central_lock');
+           
             $gambar = $_FILES['gambar']['name'];
             if ($gambar = '') {
             } else {
@@ -61,7 +61,7 @@ class Data_mobil extends CI_Controller
                 'ac' => $ac,
                 'supir' => $supir,
                 'mp3_player' => $mp3_player,
-                'central_lock' => $central_lock,
+                
                 'gambar' => $gambar
 
             );
@@ -104,11 +104,11 @@ class Data_mobil extends CI_Controller
             $ac = $this->input->post('ac');
             $supir = $this->input->post('supir');
             $mp3_player = $this->input->post('mp3_player');
-            $central_lock = $this->input->post('central_lock');
+           
             $gambar = $_FILES['gambar']['name'];
             if ($gambar) {
                 $config['upload_path'] = './assets/upload';
-                $config['allowed_types'] = 'jpg|jpeg|png|tiff';
+                $config['allowed_types'] = 'jpg|jpeg|png|tiff|jfif';
                 //bisa di config
                 $this->load->library('upload', $config);
                 if ($this->upload->do_upload('gambar')) {
@@ -131,7 +131,7 @@ class Data_mobil extends CI_Controller
                 'ac' => $ac,
                 'supir' => $supir,
                 'mp3_player' => $mp3_player,
-                'central_lock' => $central_lock,
+               
 
             );
             $where = array(
@@ -160,7 +160,7 @@ class Data_mobil extends CI_Controller
         $this->form_validation->set_rules('ac', 'AC', 'required');
         $this->form_validation->set_rules('supir', 'Supir', 'required');
         $this->form_validation->set_rules('mp3_player', 'MP3 Player', 'required');
-        $this->form_validation->set_rules('central_lock', 'Central Lock', 'required');
+       
     }
     public function detail_mobil($id)
     {

@@ -21,7 +21,7 @@ class  Auth extends CI_Controller
                </div>');
                 redirect('auth/login');
             } else {
-                $this->session->set_userdata('id_customer', $cek->id_customer);
+                $this->session->set_userdata('id_pengguna', $cek->id_pengguna);
                 $this->session->set_userdata('username', $cek->username);
                 $this->session->set_userdata('role_id', $cek->role_id);
                 $this->session->set_userdata('nama', $cek->nama);
@@ -72,9 +72,9 @@ class  Auth extends CI_Controller
             $this->load->view('templates_admin/footer');
         } else {
             $data = array('password' => md5($pass_baru));
-            $id = array('id_customer' => $this->session->userdata('id_customer'));
+            $id = array('id_pengguna' => $this->session->userdata('id_pengguna'));
 
-            $this->sewa_model->update_password($id, $data, 'customer');
+            $this->sewa_model->update_password($id, $data, 'pengguna');
             $this->session->set_flashdata('pesan', '<div class="alert alert-danger alert-dismissible fade show" role="alert">
             Password Berhasil Diupdate, Silahkan Login!
             <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
