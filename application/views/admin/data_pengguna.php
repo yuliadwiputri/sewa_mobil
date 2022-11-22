@@ -16,7 +16,6 @@
                     <th>Gender</th>
                     <th>No. Telepon</th>
                     <th>No. KTP</th>
-                    <th>Password</th>
                     <th>Role ID</th>
                     <th>Aksi</th>
                 </tr>
@@ -35,7 +34,6 @@
                         <td><?php echo $pl->gender ?></td>
                         <td><?php echo $pl->no_telepon ?></td>
                         <td><?php echo $pl->no_ktp ?></td>
-                        <td><?php echo $pl->password ?></td>
                         <td><?php echo $pl->role_id ?></td>
 
                         <td>

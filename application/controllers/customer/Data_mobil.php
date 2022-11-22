@@ -88,5 +88,3 @@ class Data_mobil extends CI_Controller {
 }
 
 /* End of file Data_mobil.php */
-
-?>

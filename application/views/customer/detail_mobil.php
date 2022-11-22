@@ -65,7 +65,7 @@
                             </tr>
 
                         </table>
-                        <a class="btn btn-sm btn-danger ms-1" href="<?php echo base_url('customer/dashboard') ?>">Kembali</a>
+                        <a class="btn btn-sm btn-danger ms-1" href="<?php echo base_url('customer/data_mobil') ?>">Kembali</a>
                     </div>
                 </div>
             </div>
