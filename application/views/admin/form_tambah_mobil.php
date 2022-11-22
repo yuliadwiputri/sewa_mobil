@@ -60,11 +60,8 @@
                                     <?php echo form_error('mp3_player', '<div class="text small text-danger">', '</div') ?>
                                 </select>
                             </div>
-
-                            
-
-
                         </div>
+                        
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Harga Sewa/Hari</label>

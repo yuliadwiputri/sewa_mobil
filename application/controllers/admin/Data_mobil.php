@@ -10,6 +10,7 @@ class Data_mobil extends CI_Controller
         $this->load->view('admin/data_mobil', $data);
         $this->load->view('templates_admin/footer');
     }
+
     public function tambah_mobil()
     {
         $data['type'] = $this->sewa_model->get_data('type')->result();
@@ -18,6 +19,7 @@ class Data_mobil extends CI_Controller
         $this->load->view('admin/form_tambah_mobil', $data);
         $this->load->view('templates_admin/footer');
     }
+    
     public function tambah_data()
     {
         $this->_rules();
@@ -87,8 +89,10 @@ class Data_mobil extends CI_Controller
 
     public function update_mobil_aksi()
     {
+        //form_validation
         $this->_rules();
         if ($this->form_validation->run() == FALSE) {
+            //jika salah kembali ke form update
             $this->update_mobil();
         } else {
 

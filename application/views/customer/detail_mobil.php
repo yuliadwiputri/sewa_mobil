@@ -19,6 +19,10 @@
                                         echo "Hatchback";
                                     } elseif ($dt->kode_type = "MPV") {
                                         echo "Multi Purpose Vehicle";
+                                    } elseif ($dt->kode_type = "SUV") {
+                                        echo "Sport Utility Vehicle";
+                                    }elseif ($dt->kode_type = "PU") {
+                                        echo "Pick Up";
                                     } else {
                                         echo "<span class='text-danger'>Type mobil belum terdaftar</span>";
                                     }
