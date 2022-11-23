@@ -81,7 +81,7 @@
                                   <li><a href="<?php echo base_url('Auth/logout')?>">Welcome <?php echo $this->session->userdata('nama')?> <span> | Logout</span></a></li>
                                  
                                 <?php } else { ?>
-                                  <li><a href="<?php echo base_url('Customer/About')?>">About</a></li>
+                                  <!-- <li><a href="<?php echo base_url('Customer/About')?>">About</a></li> -->
                                   <li><a href="<?php echo base_url('register')?>">Register</a></li>
                                   <li><a href="<?php echo base_url('Auth/login')?>">Login</a></li>
                                 <?php } ?>
