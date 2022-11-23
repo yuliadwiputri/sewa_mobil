@@ -62,7 +62,7 @@
                                     if ($dt->status == "0") {
                                         echo "<span class='btn btn-danger' disable>Telah disewa</span>";
                                     } else {
-                                        echo anchor('customer/sewa/tambah_rental' . $dt->id_mobil, '<button class="btn btn-success">Sewa</button>');
+                                        echo anchor('customer/sewa/tambah_sewa/' . $dt->id_mobil, '<button class="btn btn-success">Sewa</button>');
                                     } ?>
                                 </td>
                             <tr>
